@@ -1,0 +1,363 @@
+/* div{
+    border: 1px solid black;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ******************************** container codes ************************************ */
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /*yeniden bak*/
+    justify-content: space-between; /*yeniden bak*/
+    height: 100vh;
+
+}
+/* ******************************** container codes ************************************ */
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx all contents codes xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+.contents1{  /* xxxxx contents 1  xxxxx */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: flex-end;
+    padding: 6px;
+}
+
+.items1{ /* xxxxx contents > child  xxxxx  */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: flex-end;
+    padding: 0 4px;
+}
+
+.i-1{ /* xxxxx contents > items1 > child 1   xxxxx  */
+    padding: 0 15px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    width: 100%;
+}
+
+.items1-text{ /* google ve gmail linklerinin kodları */ /* xxxxx contents > items1 > i-1 > childs   xxxxx  */
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    padding-left: 15px;
+    font-family: sans-serif;
+}
+
+.items1-text:hover{ /* google ve gmail linklerinin kodları */ /* xxxxx contents > items1 > i-1 > childs   xxxxx  */
+    text-decoration: underline;
+}
+
+
+.i-2{ /* xxxxx contents > items1 > i-2  xxxxx  */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 2px 5px;
+}
+
+.i-2 > a{
+    padding-left: 10px;
+}
+
+.svg-code{ /* xxxxx contents > items1 > i-2 > svg  xxxxx  */
+    width: 25px;
+}
+
+.svg-code:hover{ /* xxxxx contents > items1 > i-2 > svg  xxxxx  */
+    border-radius: 100%;
+    background-color: lightgray;
+}
+
+.p-icon{
+    width: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+/* xxx contents 1 */
+
+
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+/* xxx contents 2 */
+.contents2{ /* xxxxx contents2  */
+    width: 100%;
+}
+.img-icon-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    padding-top: 100px;
+}
+.img-icon{
+    width: 100%;
+}
+
+/* -------------------------------------- FORM AREA --------------------------------  */
+
+.search-area{ /* xxxxx contents2 > search button */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+form{ 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center; 
+    padding: 15px; /*kaldır bunu*/
+}
+
+.keyboard-voice{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    border-left: 1px solid white;
+    min-width: 100px;
+    border-radius: 0px 25px 25px 0px;
+    box-shadow: 1px 2px 5px lightgray;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.keyboard-voice > a{
+    padding: 0 10px;
+}
+
+.keyboard-voice:hover{
+    box-shadow: 1px 2px 4px 2px lightgray;
+}
+
+.keyboard-voice:active{
+    border: 0px;
+}
+
+#gsearch{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+    border-right: 1px solid white;
+    border-left: 1px solid lightgray;
+    min-width: 480px;
+    padding: 15px;
+    border-radius: 25px 0px 0px 25px;
+    box-shadow: 1px 2px 5px lightgray;
+}
+
+#gsearch:hover{
+    box-shadow: 1px 2px 4px 2px lightgray;
+}
+
+.voice{
+    width: 25px;
+}
+
+i{
+    color: black;
+}
+
+/* -------------------------------------- FORM AREA --------------------------------  */
+
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX BUTTON AREA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+
+.button-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.buttons{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    padding: 15px;
+
+}
+
+.buttons > a{
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+}
+
+.buttons > a:hover{
+    border: 1px solid lightgray;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.search-google{
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.lucky{
+    margin-left: 10px;
+    border-radius: 5px;
+}
+
+
+
+.languages{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.languages > p{
+   font-size: 1rem;
+   color: black;
+   font-family: sans-serif;
+   margin-right: 4px;
+   padding: 5px;
+
+}
+
+.languages > a{
+    font-size: 1rem;
+    color: blue;
+    font-family: sans-serif;
+    text-decoration: none;
+    margin-left: 4px;
+   padding: 5px;
+
+ }
+/* XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX BUTTON AREA XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX */
+/* xxx contents 2 */
+/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx all contents codes xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
+
+
+
+
+/* oooooooooooooooooooooooooooooooooooooo Footer Codes oooooooooooooooooooooooooooooooooo */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+    
+}
+
+.column-1{
+    padding: 13px;
+    background-color: #f2f2f2;
+    border: 1px solid lightgray;
+}
+
+.column-1 > p{
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #545454;
+    font-family: sans-serif;
+}
+
+.column-2{
+    padding: 12px;
+    background-color: #f2f2f2;
+    border: 1px solid lightgray;
+
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.col-2-list{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.col-2-list > li{
+    padding: 5px 13px;
+}
+
+.col-2-list > li > a{
+    text-decoration: none;
+    color: #545454;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.col-2-list > li > a:hover{
+    text-decoration: underline;
+}
+
+.green-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: stretch;
+    justify-content: center;
+}
+
+.green-container > img{
+    width: 20px;
+    margin-right: 5px;
+}
+
+.green-container > a{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: sans-serif;
+    color: #545454;
+}
+
+.green-container > a:hover{
+    text-decoration: underline;
+}
+/* oooooooooooooooooooooooooooooooooooooo Footer Codes oooooooooooooooooooooooooooooooooo */
